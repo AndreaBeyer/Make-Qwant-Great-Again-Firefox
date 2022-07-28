@@ -33,6 +33,7 @@ body[data-theme="light"] form[data-testid="mainSearchBar"]:focus-within {
     display: inline-block;
     height: 37px;
     margin: auto 0;
+    cursor: pointer;
 }
 
 [data-device="mobile"] .buttons {
