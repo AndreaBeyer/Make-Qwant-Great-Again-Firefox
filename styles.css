@@ -1,0 +1,199 @@
+/* Replace shadow */
+* {
+    box-shadow: none !important;
+}
+
+[class*="SearchBarSuggest"] {
+    box-shadow: 0 1px 4px 0 rgba(12, 12, 14, .2), 0 0 2px 0 rgba(12, 12, 14, .12) !important;
+}
+
+body[data-theme="dark"] form[data-testid="mainSearchBar"]:focus-within {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.676) !important;
+}
+
+body[data-theme="light"] form[data-testid="mainSearchBar"]:focus-within {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.676) !important;
+}
+
+
+/* One click search buttons */
+[data-device="desktop"] .buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    left: 20px;
+    top: 132px;
+    height: calc(100vh - 182px);
+    max-height: 400px;
+    margin: auto;
+}
+
+[data-device="desktop"] .button {
+    display: inline-block;
+    height: 37px;
+    margin: auto 0;
+}
+
+[data-device="mobile"] .buttons {
+    display: flex;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+}
+
+body[data-theme="light"][data-device="mobile"] .buttons {
+    background-color: white;
+}
+
+body[data-theme="dark"][data-device="mobile"] .buttons {
+    background-color: black;
+}
+
+[data-device="mobile"] .button {
+    display: inline-block;
+    height: 37px;
+    margin: 0 auto;
+}
+
+body[data-theme="light"] #wiki>g>path {
+    fill: rgb(0, 0, 0);
+}
+
+body[data-theme="dark"] #wiki>g>path {
+    fill: rgb(255, 255, 255);
+}
+
+
+/* headers */
+body[data-theme="light"] [class*="SearchHeader"], body[data-theme="light"] [class*="SuggestableSearchBarMobile"] {
+    background-color: #fff !important;
+}
+
+body[data-theme="dark"] [class*="SearchHeader"], body[data-theme="dark"] [class*="SuggestableSearchBarMobile"] {
+    background-color: #000 !important;
+}
+
+body[data-theme="light"] [data-testid="mainSearchBar"] {
+    background-color: #f5f5f7 !important;
+}
+
+body[data-theme="dark"] [data-testid="mainSearchBar"] {
+    background-color: rgb(41, 41, 47) !important;
+}
+
+body[data-theme="light"] [class*="SearchHeaderFloating"], body[data-theme="light"] .SearchHeader-module__SearchHeader___27RFp {
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+body[data-theme="dark"] [class*="SearchHeaderFloating"], body[data-theme="dark"] .SearchHeader-module__SearchHeader___27RFp {
+    border-bottom: 3px solid rgb(0, 0, 0) !important;
+}
+
+
+/* Hide toast */
+[data-testid="mobile-app-toast"], [class*="DownloadQwantApp"] {
+    display: none !important;
+}
+
+/* Hide Discontinued Music service */
+a[data-testid="musicNavItem"] {
+    display: none !important;
+}
+
+/* Add margin to Image tab and Shopping Tab to better display */
+[class*="Images-module__ImagesGrid"] {
+    margin-left: 25px !important;
+}
+
+[class*="Shopping-module__ShoppingLayout"] {
+    margin-left: 35px !important;
+}
+
+/* SearchBar */
+form[data-testid="mainSearchBar"], [class*="SearchBarSuggest"] {
+    border: none !important;
+}
+
+form[data-testid="mainSearchBar"] {
+    height: 48px !important;
+    padding-left: 12px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+/* Product and Maps Buttons */
+a[data-testid="MapsMenuLink"], a[data-testid="productsAppMenuLink"] {
+    border: none !important;
+}
+
+/* Product Button */
+a[data-testid="productsAppMenuLink"] {
+    margin-right: 20px !important;
+}
+
+/* SearchBar Reset button */
+body[data-theme="light"] [class*="SearchBarResetButton"] {
+    border-right: 1px solid rgb(89, 89, 95) !important;
+}
+
+body[data-theme="dark"] [class*="SearchBarResetButton"] {
+    border-right: 1px solid rgb(255, 255, 255) !important;
+}
+
+/* Hide ugly parts of start page */
+[class*="Home-module__container"] {
+    display: none !important;
+}
+
+[data-testid="home"] {
+    min-height: calc(100vh - 180px) !important;
+}
+
+/* SVG colors */
+body[data-theme="light"] a[data-testid="MapsMenuLink"]>svg>path:nth-child(1), body[data-theme="light"] a[data-testid="productsAppMenuLink"]>svg>path:nth-child(1),
+body[data-theme="light"] button[aria-label="Rechercher sur le web"]>svg>path:nth-child(1) {
+    fill: rgb(0, 0, 0) !important;
+}
+
+body[data-theme="dark"] a[data-testid="MapsMenuLink"]>svg>path:nth-child(1), body[data-theme="dark"] a[data-testid="productsAppMenuLink"]>svg>path:nth-child(1),
+body[data-theme="dark"] button[aria-label="Rechercher sur le web"]>svg>path:nth-child(1) {
+    fill: rgb(255, 255, 255) !important;
+}
+
+/* Header links */
+body[data-theme="dark"] [class*="SearchHeaderLinkLabel"] {
+    color: rgb(167, 172, 180) !important;
+    font-size: 14px !important;
+}
+
+body[data-theme="light"] [class*="SearchHeaderLinkLabel"] {
+    color: rgb(0, 0, 0);
+    font-size: 14px !important;
+}
+
+/* Navbar tab hover colors */
+[class*="NavBarItemActive"], [class*="Text-module__primary"]:hover, [class*="Navbar-module__NavBarItem"]:hover {
+    color: #1a6aff !important;
+}
+
+/* Hide logo before change with js */
+[class*="SearchHeaderLogo"] {
+    visibility: hidden;
+    height: 80% !important;
+}
+
+/* Reset and search buttons */
+button[type="search"]>svg {
+    height: 24px !important;
+    width: 24px !important;
+    margin-right: 10px !important;
+}
+
+button[type="reset"] {
+    height: 24px !important;
+    width: 34px !important;
+}
