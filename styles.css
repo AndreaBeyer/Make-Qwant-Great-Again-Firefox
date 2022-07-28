@@ -105,11 +105,11 @@ a[data-testid="musicNavItem"] {
 }
 
 /* Add margin to Image tab and Shopping Tab to better display */
-[class*="Images-module__ImagesGrid"] {
+[data-device="desktop"] [class*="Images-module__ImagesGrid"] {
     margin-left: 25px !important;
 }
 
-[class*="Shopping-module__ShoppingLayout"] {
+[data-device="desktop"] [class*="Shopping-module__ShoppingLayout"] {
     margin-left: 35px !important;
 }
 
