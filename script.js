@@ -13,11 +13,9 @@ window.onload = function () {
     closeRibbonBtn.click();
   }
 
-  const body = document.querySelector("body");
-
   //Google One click
   const buttonGoogle = document.createElement("a");
-  buttonGoogle.className = "button google-button";
+  buttonGoogle.className = "button";
 
   /* #region buttonGoogle SVG */
   buttonGoogle.innerHTML =
@@ -25,18 +23,18 @@ window.onload = function () {
   /* #endregion */
   buttonGoogle.onclick = clickGoogleHandler;
 
-  //Bing One click
-  const buttonBing = document.createElement("a");
-  buttonBing.className = "button bing-button";
-  /* #region buttonBing SVG */
-  buttonBing.innerHTML =
-    '<svg height="1.8em" width="1.8em" viewBox="0 0 256 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><title>Bing</title><path d="M95.055 82.908l32.581 70.647 48.144 21.777L2.125 266.695l71.154-63.428V22.449L0 0v268.932l72.83 51.054L256 210.88v-78.653L95.055 82.908" fill="#F4BD27"/></svg>';
+  //duckduck One click
+  const buttonDuck = document.createElement("a");
+  buttonDuck.className = "button";
+  /* #region buttonDuck SVG */
+  buttonDuck.innerHTML =
+    '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1.8em" width="1.8em" viewBox="0 0 32 32" ><title>DuckDuckGo</title><g transform="matrix(.266667 0 0 .266667 -17.954934 -5.057333)"><circle cx="127.332" cy="78.966" r="51.15" fill="#de5833"/><defs><path id="A" d="M178.684 78.824c0 28.316-23.035 51.354-51.354 51.354-28.313 0-51.348-23.04-51.348-51.354s23.036-51.35 51.348-51.35c28.318 0 51.354 23.036 51.354 51.35z"/></defs><clipPath id="B"><use xlink:href="#A"/></clipPath><g clip-path="url(#B)"><path d="M148.293 155.158c-1.8-8.285-12.262-27.04-16.23-34.97s-7.938-19.1-6.13-26.322c.328-1.312-3.436-11.308-2.354-12.015 8.416-5.5 10.632.6 14.002-1.862 1.734-1.273 4.1 1.047 4.7-1.06 2.158-7.567-3.006-20.76-8.77-26.526-1.885-1.88-4.77-3.06-8.03-3.687-1.254-1.713-3.275-3.36-6.138-4.88-3.188-1.697-10.12-3.938-13.717-4.535-2.492-.4-3.055.287-4.12.46.992.088 5.7 2.414 6.615 2.55-.916.62-3.607-.028-5.324.742-.865.392-1.512 1.877-1.506 2.58 4.9-.496 12.574-.016 17.1 2-3.602.4-9.08.867-11.436 2.105-6.848 3.608-9.873 12.035-8.07 22.133 1.804 10.075 9.738 46.85 12.262 59.13 2.525 12.264-5.408 20.2-10.455 22.354l5.408.363-1.8 3.967c6.484.72 13.695-1.44 13.695-1.44-1.438 3.965-11.176 5.412-11.176 5.412s4.7 1.438 12.258-1.447l12.263-4.688 3.604 9.373 6.854-6.847 2.885 7.2c.014-.001 5.424-1.808 3.62-10.103z" fill="#d5d7d8"/><path d="M150.47 153.477c-1.795-8.3-12.256-27.043-16.228-34.98s-7.935-19.112-6.13-26.32c.335-1.3.34-6.668 1.43-7.38 8.4-5.494 7.812-.184 11.187-2.645 1.74-1.27 3.133-2.806 3.738-4.912 2.164-7.572-3.006-20.76-8.773-26.53-1.88-1.88-4.768-3.062-8.023-3.686-1.252-1.718-3.27-3.36-6.13-4.882-5.4-2.862-12.074-4.006-18.266-2.883 1 .1 3.256 2.138 4.168 2.273-1.38.936-5.053.815-5.03 2.896 4.916-.492 10.303.285 14.834 2.297-3.602.4-6.955 1.3-9.3 2.543-6.854 3.603-8.656 10.812-6.854 20.914 1.807 10.097 9.742 46.873 12.256 59.126 2.527 12.26-5.402 20.188-10.45 22.354l5.408.36-1.8 3.973c6.484.72 13.695-1.44 13.695-1.44-1.438 3.974-11.176 5.406-11.176 5.406s4.686 1.44 12.258-1.445l12.27-4.688 3.604 9.373 6.852-6.85 2.9 7.215c-.016.007 5.388-1.797 3.58-10.088z" fill="#fff"/><path d="M109.02 70.69c0-2.093 1.693-3.787 3.79-3.787 2.1 0 3.785 1.694 3.785 3.787s-1.695 3.786-3.785 3.786c-2.096.001-3.79-1.692-3.79-3.786z" fill="#2d4f8e"/><path d="M113.507 69.43a.98.98 0 0 1 .98-.983c.543 0 .984.438.984.983s-.44.984-.984.984c-.538.001-.98-.44-.98-.984z" fill="#fff"/><path d="M134.867 68.445c0-1.793 1.46-3.25 3.252-3.25 1.8 0 3.256 1.457 3.256 3.25 0 1.8-1.455 3.258-3.256 3.258a3.26 3.26 0 0 1-3.252-3.258z" fill="#2d4f8e"/><path d="M138.725 67.363c0-.463.38-.843.838-.843a.84.84 0 0 1 .846.843c0 .47-.367.842-.846.842a.84.84 0 0 1-.838-.842z" fill="#fff"/><linearGradient id="C" gradientUnits="userSpaceOnUse" x1="105.318" y1="60.979" x2="113.887" y2="60.979"><stop offset=".006" stop-color="#6176b9"/><stop offset=".691" stop-color="#394a9f"/></linearGradient><path d="M113.886 59.718s-2.854-1.3-5.63.453-2.668 3.523-2.668 3.523-1.473-3.283 2.453-4.892 5.844.916 5.844.916z" fill="url(#C)"/><linearGradient id="D" gradientUnits="userSpaceOnUse" x1="132.273" y1="58.371" x2="140.078" y2="58.371"><stop offset=".006" stop-color="#6176b9"/><stop offset=".691" stop-color="#394a9f"/></linearGradient><path d="M140.078 59.458s-2.05-1.172-3.643-1.152c-3.27.043-4.162 1.488-4.162 1.488s.55-3.445 4.732-2.754c2.268.377 3.073 2.418 3.073 2.418z" fill="url(#D)"/></g><path d="M124.4 85.295c.38-2.3 6.3-6.625 10.5-6.887 4.2-.265 5.5-.205 9-1.043s12.535-3.088 15.033-4.242c2.504-1.156 13.104.572 5.63 4.738-3.232 1.8-11.943 5.13-18.172 6.987-6.22 1.86-10-1.776-12.06 1.28-1.646 2.432-.334 5.762 7.1 6.453 10.037.93 19.66-4.52 20.72-1.625s-8.625 6.508-14.525 6.623c-5.893.1-17.77-3.896-19.555-5.137s-4.165-4.13-3.67-7.148z" fill="#fdd20a"/><path d="M128.943 115.592s-14.102-7.52-14.332-4.47c-.238 3.056 0 15.5 1.643 16.45s13.396-6.108 13.396-6.108zm5.403-.474s9.635-7.285 11.754-6.815c2.1.48 2.582 15.5.7 16.23-1.88.7-12.908-3.813-12.908-3.813z" fill="#65bc46"/><path d="M125.53 116.4c0 4.932-.7 7.05 1.4 7.52s6.104 0 7.518-.938.232-7.28-.232-8.465c-.477-1.174-8.696-.232-8.696 1.884z" fill="#43a244"/><path d="M126.426 115.292c0 4.933-.707 7.05 1.4 7.52 2.106.48 6.104 0 7.52-.938 1.4-.94.23-7.28-.236-8.466-.473-1.173-8.692-.227-8.692 1.885z" fill="#65bc46"/><circle cx="127.331" cy="78.965" r="57.5" fill="none" stroke="#de5833" stroke-width="5"/></g></svg>';
   /* #endregion */
-  buttonBing.onclick = clickBingHandler;
+  buttonDuck.onclick = clickDuckHandler;
 
   //Maps One click
   const buttonMaps = document.createElement("a");
-  buttonMaps.className = "button google-map-button";
+  buttonMaps.className = "button";
   /* #region buttonMaps SVG */
   buttonMaps.innerHTML =
     '<svg height="1.8em" width="1.8em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 132.3"><path fill="#1a73e8" d="M60.2 2.2C55.8.8 51 0 46.1 0 32 0 19.3 6.4 10.8 16.5l21.8 18.3L60.2 2.2z"/><title>Google Maps</title><path fill="#ea4335" d="M10.8 16.5C4.1 24.5 0 34.9 0 46.1c0 8.7 1.7 15.7 4.6 22l28-33.3-21.8-18.3z"/><path fill="#4285f4" d="M46.2 28.5c9.8 0 17.7 7.9 17.7 17.7 0 4.3-1.6 8.3-4.2 11.4 0 0 13.9-16.6 27.5-32.7-5.6-10.8-15.3-19-27-22.7L32.6 34.8c3.3-3.8 8.1-6.3 13.6-6.3"/><path fill="#fbbc04" d="M46.2 63.8c-9.8 0-17.7-7.9-17.7-17.7 0-4.3 1.5-8.3 4.1-11.3l-28 33.3c4.8 10.6 12.8 19.2 21 29.9l34.1-40.5c-3.3 3.9-8.1 6.3-13.5 6.3"/><path fill="#34a853" d="M59.1 109.2c15.4-24.1 33.3-35 33.3-63 0-7.7-1.9-14.9-5.2-21.3L25.6 98c2.6 3.4 5.3 7.3 7.9 11.3 9.4 14.5 6.8 23.1 12.8 23.1s3.4-8.7 12.8-23.2"/></svg>';
@@ -45,7 +43,7 @@ window.onload = function () {
 
   //Wikipedia One click
   const buttonWiki = document.createElement("a");
-  buttonWiki.className = "button wiki-button";
+  buttonWiki.className = "button";
   /* #region buttonWiki SVG */
   buttonWiki.innerHTML =
     '<svg enable-background="new 0 0 100 100" height="1.8em" width="1.8em" id="wiki" version="1.1" viewBox="0 0 100 100" width="100px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><defs><rect height="100" id="SVGID_1_" width="100"/></defs><title>Wikipedia</title><path d="M94.938,19H76.331l-1.332,0.229v1.788c0,0.21,0.636,0.386,0.812,0.517   c0.168,0.142,0.623,0.219,0.811,0.219l1.686,0.084c1.912,0.09,2.494,0.505,3.239,1.205c0.731,0.725,0.851,1.955,0.281,3.684   L65.383,69.654l-0.628-0.187L54.309,45.97c0.151-0.353,0.242-0.551,0.242-0.551l8.553-17.578c0.994-1.854,1.957-3.511,2.446-4.283   c0.894-1.408,1.328-1.674,3.763-1.797c0.498,0,0.688-0.244,0.688-0.738v-1.778l-0.125-0.191c0,0-10.224-0.035-14.879,0l0.002,0.183   v1.779c0,0.217-0.119,0.39,0.046,0.521c0.176,0.142,0.25,0.215,0.439,0.215l0.697,0.089c1.902,0.09,2.754,0.636,3.012,0.979   c0.455,0.615,0.668,1.271-0.434,3.911l-6.585,14.42l-5.95-13.376c-1.952-4.274-2.434-5.597,0.507-5.844l0.79-0.183   c0.566,0,0.478-0.224,0.478-0.649v-1.87l-0.059-0.153c0,0-10.899,0-15.873,0.003L32,19.262v1.875c0,0.421,0.416,0.529,1.186,0.645   c2.754,0.396,2.707,0.713,5.428,6.646c0.407,0.889,1.61,3.57,1.61,3.57l6.203,13.391c0,0,0.704,1.72,1.805,4.39l-9.016,19.763   l-0.514-0.146c0,0-13.992-32.418-18.037-43.266c-0.427-1.117-0.611-1.953-0.611-2.468c0-1.102,0.904-1.699,2.712-1.779l2.751-0.099   c0.563,0,1.483-0.236,1.483-0.727v-1.779l-0.829-0.184c0,0-17.139-0.021-20.602,0L5,19.279v1.872c0,0.336,0.449,0.545,1.228,0.634   c2.128,0.129,3.559,0.499,4.229,1.123c0.668,0.628,1.393,2.215,2.333,4.688c5.086,13.424,15.901,37.38,21.166,51.026   c1.512,3.724,3.423,4.303,5.732-0.117c2.379-4.848,7.179-15.608,10.68-23.552c3.275,7.924,7.734,18.645,9.885,23.501   c1.712,3.887,3.664,4.271,5.646,0.116c5.183-12.654,20.319-50.736,20.319-50.736c0.654-1.869,1.568-3.309,2.746-4.355   c1.169-1.033,2.909-1.617,5.349-1.731c0.494,0,0.688-0.249,0.688-0.731v-1.788L94.938,19z"/></g></svg>';
@@ -54,7 +52,7 @@ window.onload = function () {
 
   //Youtube One click
   const buttonYTB = document.createElement("a");
-  buttonYTB.className = "button ytb-button";
+  buttonYTB.className = "button";
   /* #region buttonYTB SVG */
   buttonYTB.innerHTML =
     '<svg height="1.8em" width="1.8em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 86.43"><defs><style>.cls-1,.cls-2{fill-rule:evenodd;}.cls-2{fill:#fff;}</style></defs><title>YouTube</title><path fill="#FF0000" class="cls-1" d="M121.63,18.65s-1.2-8.47-4.9-12.19c-4.67-4.89-9.91-4.92-12.31-5.21C87.24,0,61.43,0,61.43,0h0s-25.8,0-43,1.25c-2.4.29-7.63.31-12.31,5.21C2.4,10.18,1.22,18.65,1.22,18.65A187.15,187.15,0,0,0,0,38.55v9.31a187.65,187.65,0,0,0,1.22,19.9S2.42,76.23,6.09,80c4.68,4.9,10.82,4.74,13.57,5.26,9.83.94,41.78,1.22,41.78,1.22s25.83,0,43-1.27c2.41-.29,7.64-.32,12.32-5.21,3.69-3.72,4.89-12.2,4.89-12.2a187.15,187.15,0,0,0,1.22-19.9V38.54a189.26,189.26,0,0,0-1.25-19.9Z"/><polygon class="cls-2" points="48.71 59.16 48.71 24.63 81.9 41.95 48.71 59.16 48.71 59.16"/></svg>';
@@ -65,12 +63,22 @@ window.onload = function () {
   buttons.className = "buttons";
 
   buttons.appendChild(buttonGoogle);
-  buttons.appendChild(buttonBing);
+  buttons.appendChild(buttonDuck);
   buttons.appendChild(buttonMaps);
   buttons.appendChild(buttonWiki);
   buttons.appendChild(buttonYTB);
 
-  body.appendChild(buttons);
+  const isMobile = document.querySelector('[data-device="mobile"]');
+
+  if (isMobile) {
+    const body = document.querySelector("body");
+
+    body.appendChild(buttons);
+  } else {
+    const searchBar = document.querySelector('[class*="SearchHeader"]');
+
+    searchBar.appendChild(buttons);
+  }
 };
 
 function clickGoogleHandler() {
@@ -80,10 +88,10 @@ function clickGoogleHandler() {
   urlRedirect(url);
 }
 
-function clickBingHandler() {
+function clickDuckHandler() {
   const input = document.querySelector("input[type=search]");
   const url =
-    "https://www.bing.com/search?q=" + encodeURIComponent(input.value);
+    "https://www.duckduckgo.com/?q=" + encodeURIComponent(input.value);
   urlRedirect(url);
 }
 
