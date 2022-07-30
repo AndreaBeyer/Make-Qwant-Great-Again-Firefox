@@ -108,6 +108,16 @@ body[data-theme="light"][data-device="mobile"] #wiki > g > path {
 }
 
 /* headers */
+
+.SearchHeader-module__SearchHeader___27RFp {
+  visibility: hidden;
+}
+
+.SearchHeader-module__SearchHeader___27RFp {
+  background-color: transparent !important;
+}
+
+
 body[data-theme="light"] [class*="SearchHeader"],
 body[data-theme="light"] [class*="SuggestableSearchBarMobile"] {
   background-color: #fff !important;
