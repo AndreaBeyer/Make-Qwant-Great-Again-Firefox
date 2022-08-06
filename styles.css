@@ -18,7 +18,7 @@ body[data-theme="dark"] form[data-testid="mainSearchBar"]:focus-within {
 }
 
 body[data-theme="dark"] [data-testid="home"] {
-  background-color: #000;
+  background-color: #131416;
 }
 
 body[data-theme="light"] form[data-testid="mainSearchBar"]:focus-within {
@@ -80,10 +80,6 @@ body[data-theme="dark"] [class*="SearchHeaderBurger"] {
   padding-top: 10px;
 }
 
-[data-device="mobile"] footer {
-  display: none;
-}
-
 [data-device="mobile"] .button {
   display: inline-block;
   height: 37px;
@@ -107,16 +103,19 @@ body[data-theme="light"][data-device="mobile"] #wiki > g > path {
   fill: rgb(255, 255, 255);
 }
 
+/* Hide mobile footer */
+
+[data-device="mobile"] footer {
+  display: none;
+}
+
 /* headers */
 
-.SearchHeader-module__SearchHeader___27RFp {
-  visibility: hidden;
-}
+/* headers Colors */
 
 .SearchHeader-module__SearchHeader___27RFp {
   background-color: transparent !important;
 }
-
 
 body[data-theme="light"] [class*="SearchHeader"],
 body[data-theme="light"] [class*="SuggestableSearchBarMobile"] {
@@ -125,7 +124,7 @@ body[data-theme="light"] [class*="SuggestableSearchBarMobile"] {
 
 body[data-theme="dark"] [class*="SearchHeader"],
 body[data-theme="dark"] [class*="SuggestableSearchBarMobile"] {
-  background-color: #000 !important;
+  background-color: #131416 !important;
 }
 
 body[data-theme="light"] [data-testid="mainSearchBar"] {
@@ -136,6 +135,8 @@ body[data-theme="dark"] [data-testid="mainSearchBar"] {
   background-color: rgb(41, 41, 47) !important;
 }
 
+/* headers borders */
+
 body[data-theme="light"] [class*="SearchHeaderFloating"],
 body[data-theme="light"] .SearchHeader-module__SearchHeader___27RFp {
   border-bottom: 3px solid rgb(255, 255, 255);
@@ -143,8 +144,10 @@ body[data-theme="light"] .SearchHeader-module__SearchHeader___27RFp {
 
 body[data-theme="dark"] [class*="SearchHeaderFloating"],
 body[data-theme="dark"] .SearchHeader-module__SearchHeader___27RFp {
-  border-bottom: 3px solid rgb(0, 0, 0) !important;
+  border-bottom: 3px solid #131416 !important;
 }
+
+/* search bar width */
 
 [class*="SearchBarContainer"] {
   max-width: 652px !important;
@@ -159,6 +162,8 @@ body[data-theme="dark"] .SearchHeader-module__SearchHeader___27RFp {
   max-width: 652px !important;
 }
 
+/* Hide product home page */
+
 .SearchHeader-module__SearchHeader___27RFp [data-testid="productsAppMenuLink"] {
   display: none;
 }
@@ -167,6 +172,8 @@ body[data-theme="dark"] .SearchHeader-module__SearchHeader___27RFp {
   [data-testid="productsAppMenuLink"] {
   display: inherit;
 }
+
+/* Home page search bar position */
 
 [data-device="desktop"] .SearchHeader-module__SearchHeader___27RFp {
   top: 10vw;
@@ -181,11 +188,13 @@ body[data-theme="dark"] .SearchHeader-module__SearchHeader___27RFp {
   margin-right: 0;
 }
 
+/* Search page search bar height */
 .SearchHeader-module__SearchHeader___27RFp.SearchHeader-module__SearchHeaderFloating___2z9qx
   form[data-testid="mainSearchBar"] {
   height: 48px !important;
 }
 
+/* Home page search bar height */
 .SearchHeader-module__SearchHeader___27RFp form[data-testid="mainSearchBar"] {
   height: 60px !important;
 }
@@ -234,7 +243,7 @@ a[data-testid="productsAppMenuLink"] {
   margin-right: 20px !important;
 }
 
-/* Product Button */
+/* Hide Map Button */
 a[data-testid="MapsMenuLink"] {
   visibility: hidden;
 }
@@ -261,7 +270,8 @@ body[data-theme="dark"] [class*="SearchBarResetButton"] {
   min-height: calc(100vh - 85px);
 }
 
-/* SVG colors */
+/* Native buttons SVG colors */
+
 body[data-theme="light"]
   a[data-testid="MapsMenuLink"]
   > svg
@@ -296,7 +306,7 @@ body[data-theme="dark"] [class*="SearchHeaderLinkLabel"] {
 }
 
 body[data-theme="light"] [class*="SearchHeaderLinkLabel"] {
-  color: rgb(0, 0, 0);
+  color: #131416;
   font-size: 14px !important;
 }
 
@@ -329,4 +339,17 @@ button[type="search"] > svg {
 button[type="reset"] {
   height: 24px !important;
   width: 34px !important;
+}
+
+/* Footer */
+footer * {
+  background-color: transparent!important;
+}
+
+body[data-theme="light"] footer {
+  border-top: 3px solid rgb(255, 255, 255);
+}
+
+body[data-theme="dark"] footer {
+  border-top: 1px solid #2f3237!important;
 }

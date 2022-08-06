@@ -7,13 +7,13 @@ window.onload = function () {
   document.querySelector('[class*="SearchHeaderLogo"]').style.visibility =
     "visible";
 
-  document.querySelector(
+/*   document.querySelector(
     ".SearchHeader-module__SearchHeader___27RFp"
   ).style.backgroundColor = "transparent";
 
   document.querySelector(
     ".SearchHeader-module__SearchHeader___27RFp"
-  ).style.visibility = "visible";
+  ).style.visibility = "visible"; */
 
   const closeRibbonBtn = document.querySelector('[class*="RibbonClose"]');
 
