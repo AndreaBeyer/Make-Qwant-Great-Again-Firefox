@@ -73,7 +73,7 @@ body[data-theme="dark"] [class*="SearchHeaderBurger"] {
   width: 100%;
   margin: auto;
   background-color: #131416;
-  border-top: 1px solid #2f3237!important;
+  border-top: 1px solid #2f3237 !important;
   padding-top: 10px;
 }
 
@@ -103,7 +103,6 @@ body[data-theme="dark"] #wiki > g > path {
 body[data-theme="light"][data-device="desktop"] #wiki > g > path {
   fill: rgb(0, 0, 0);
 }
-
 
 /* Hide mobile footer */
 
@@ -345,7 +344,7 @@ button[type="reset"] {
 
 /* Footer */
 footer * {
-  background-color: transparent!important;
+  background-color: transparent !important;
 }
 
 body[data-theme="light"] footer {
@@ -353,5 +352,5 @@ body[data-theme="light"] footer {
 }
 
 body[data-theme="dark"] footer {
-  border-top: 1px solid #2f3237!important;
+  border-top: 1px solid #2f3237 !important;
 }
