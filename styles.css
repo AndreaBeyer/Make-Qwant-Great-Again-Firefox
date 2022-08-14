@@ -3,27 +3,57 @@
   box-shadow: none !important;
 }
 
+body[data-theme="dark"] [class*="Text-module__serpLink"]{
+  color: #7799E5!important;
+}
+
+/* Replace search dark color */
+body[data-theme="dark"] [class*="Text-module__secondary"], body[data-theme="dark"] [class*="Text-module__primary"], body[data-theme="dark"] input[type="search"]{
+  color: #AFB3C1!important;
+}
+
+body[data-theme="dark"] [class*="SearchLayout-module__container"], body[data-theme="dark"] [class*="Web-module__container"], body[data-theme="dark"] [data-testid="home"]{
+  background-color: #17191E!important;
+}
+
+/* Dark Card color */
+body[data-theme="dark"] [class*="Card-module"]{
+  background-color: #1E2028!important;
+}
+
+body[data-theme="dark"] [class*="ProductCardSearch"]{
+  background-color: var(--brand-search) !important;
+}
+
+body[data-theme="dark"] [class*="ProductCardMaps"]{
+  background-color: var(--brand-maps) !important;
+}
+
+body[data-theme="dark"] [class*="ProductCardJunior"]{
+  background-color: var(--brand-junior) !important;
+}
+
+body[data-theme="dark"] [class*="Excerpt-module"]{
+  --gradient-background: #1E2028!important;
+}
+
+
 /* Searchbar color */
-[class*="SearchBarSuggest"] {
+
+body[data-theme="light"] [class*="SearchBarSuggest"] {
   box-shadow: 0 1px 4px 0 rgba(12, 12, 14, 0.2),
     0 0 2px 0 rgba(12, 12, 14, 0.12) !important;
 }
 
-form[data-testid="mainSearchBar"] {
+body[data-theme="light"] form[data-testid="mainSearchBar"] {
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16) !important;
 }
 
-body[data-theme="dark"] form[data-testid="mainSearchBar"]:focus-within {
-  box-shadow: 0 1px 6px rgba(255, 255, 255, 0.676) !important;
-}
-
-body[data-theme="dark"] [data-testid="home"] {
-  background-color: #131416;
-}
 
 body[data-theme="light"] form[data-testid="mainSearchBar"]:focus-within {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.676) !important;
 }
+
 
 /* Hamburger */
 body[data-theme="dark"] [class*="SearchHeaderBurger"] {
@@ -72,13 +102,13 @@ body[data-theme="dark"] [class*="SearchHeaderBurger"] {
   bottom: 0px;
   width: 100%;
   margin: auto;
-  background-color: #131416;
+  background-color: #17191E;
   border-top: 1px solid #2f3237 !important;
   padding-top: 10px;
 }
 
 body[data-theme="dark"][data-device="mobile"] .buttons {
-  background-color: #131416;
+  background-color: #17191E;
 }
 
 body[data-theme="light"][data-device="mobile"] .buttons {
@@ -125,7 +155,7 @@ body[data-theme="light"] [class*="SuggestableSearchBarMobile"] {
 
 body[data-theme="dark"] [class*="SearchHeader"],
 body[data-theme="dark"] [class*="SuggestableSearchBarMobile"] {
-  background-color: #131416 !important;
+  background-color: #17191E !important;
 }
 
 body[data-theme="light"] [data-testid="mainSearchBar"] {
@@ -140,12 +170,12 @@ body[data-theme="dark"] [data-testid="mainSearchBar"] {
 
 body[data-theme="light"] [class*="SearchHeaderFloating"],
 body[data-theme="light"] .SearchHeader-module__SearchHeader___27RFp {
-  border-bottom: 3px solid rgb(255, 255, 255);
+  border-bottom: 3px solid #fff;
 }
 
 body[data-theme="dark"] [class*="SearchHeaderFloating"],
 body[data-theme="dark"] .SearchHeader-module__SearchHeader___27RFp {
-  border-bottom: 3px solid #131416 !important;
+  border-bottom: 3px solid #17191E !important;
 }
 
 /* search bar width */
@@ -255,7 +285,7 @@ body[data-theme="light"] [class*="SearchBarResetButton"] {
 }
 
 body[data-theme="dark"] [class*="SearchBarResetButton"] {
-  border-right: 1px solid rgb(255, 255, 255) !important;
+  border-right: 1px solid #AFB3C1 !important;
 }
 
 /* Hide ugly parts of start page */
@@ -282,23 +312,24 @@ body[data-theme="light"]
   > svg
   > path:nth-child(1),
 body[data-theme="light"]
-  button[aria-label="Rechercher sur le web"]
+  button[type="search"]
+  > svg
+  > path:nth-child(1),
+  body[data-theme="light"]
+  button[type="reset"]
   > svg
   > path:nth-child(1) {
   fill: rgb(0, 0, 0) !important;
 }
 
 body[data-theme="dark"] a[data-testid="MapsMenuLink"] > svg > path:nth-child(1),
-body[data-theme="dark"]
-  a[data-testid="productsAppMenuLink"]
-  > svg
-  > path:nth-child(1),
-body[data-theme="dark"]
-  button[aria-label="Rechercher sur le web"]
-  > svg
-  > path:nth-child(1) {
-  fill: rgb(255, 255, 255) !important;
+body[data-theme="dark"] a[data-testid="productsAppMenuLink"] > svg > path:nth-child(1),
+body[data-theme="dark"] button[type="submit"] > svg > path,
+body[data-theme="dark"] button[type="reset"] > svg > g > path:nth-child(2)
+{
+  fill: #AFB3C1 !important;
 }
+
 
 /* Header links */
 body[data-theme="dark"] [class*="SearchHeaderLinkLabel"] {
@@ -307,14 +338,20 @@ body[data-theme="dark"] [class*="SearchHeaderLinkLabel"] {
 }
 
 body[data-theme="light"] [class*="SearchHeaderLinkLabel"] {
-  color: #131416;
+  color: #17191E;
   font-size: 14px !important;
 }
 
 /* Navbar tab hover colors */
-[class*="NavBarItemActive"],
-[class*="Text-module__primary"]:hover,
-[class*="Navbar-module__NavBarItem"]:hover {
+body[data-theme="dark"] [class*="NavBarItemActive"],
+body[data-theme="dark"] [class*="Text-module__primary"]:hover,
+body[data-theme="dark"] [class*="Navbar-module__NavBarItem"]:hover {
+  color: #7799E5 !important;
+}
+
+body[data-theme="light"] [class*="NavBarItemActive"],
+body[data-theme="light"] [class*="Text-module__primary"]:hover,
+body[data-theme="light"] [class*="Navbar-module__NavBarItem"]:hover {
   color: #1a6aff !important;
 }
 
@@ -343,8 +380,12 @@ button[type="reset"] {
 }
 
 /* Footer */
-footer * {
+body[data-theme="light"] footer * {
   background-color: transparent !important;
+}
+
+body[data-theme="dark"] footer * {
+  background-color: #17191E !important;
 }
 
 body[data-theme="light"] footer {
@@ -354,3 +395,4 @@ body[data-theme="light"] footer {
 body[data-theme="dark"] footer {
   border-top: 1px solid #2f3237 !important;
 }
+
