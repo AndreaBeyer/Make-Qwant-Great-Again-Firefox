@@ -20,9 +20,9 @@ body[data-theme="dark"] [data-testid="home"] {
   background-color: #17191e !important;
 }
 
-body[data-theme="dark"] [class*="WebResult-module__iconBox"]{
+body[data-theme="dark"] [class*="iconBox"]{
   left: 16px!important;
-  top: 50px!important;
+  top: 20px!important;
   position: absolute!important;
 }
 
@@ -72,6 +72,10 @@ body[data-theme="dark"] [data-testid="sectionWeb"], body[data-theme="dark"] [dat
   margin-bottom: 8px;
 }
 
+body[data-theme="dark"] [class*="Text-module__heading"]{
+  left: 25px;
+  padding-right: 20px;
+}
 body[data-theme="dark"] .Stack-module__VerticalStack___2NDle{
   grid-gap: 16px!important;
 }
@@ -445,5 +449,3 @@ body[data-theme="light"] footer {
 body[data-theme="dark"] footer {
   border-top: 1px solid #2f3237 !important;
 }
-
-
