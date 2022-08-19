@@ -9,9 +9,12 @@ body[data-theme="dark"] [class*="Text-module__serpLink"] {
 
 /* Replace web result design dark color */
 body[data-theme="dark"] [class*="Text-module__secondary"],
-body[data-theme="dark"] [class*="Text-module__primary"],
-body[data-theme="dark"] input[type="search"] {
+body[data-theme="dark"] [class*="Text-module__primary"] {
   color: #afb3c1 !important;
+}
+
+body[data-theme="dark"] input[type="search"]{
+  color: #fff;
 }
 
 body[data-theme="dark"] [class*="SearchLayout-module__container"],
@@ -22,11 +25,10 @@ body[data-theme="dark"] [data-testid="home"] {
 
 body[data-theme="dark"] [class*="iconBox"]{
   left: 16px!important;
-  top: 20px!important;
-  position: absolute!important;
+  top: 46px!important;
 }
 
-body[data-theme="dark"] [class*="WebResult-module__permalink"]{
+body[data-theme="dark"][data-device="desktop"] [class*="SER-module__permalink"]{
   left: 28px;
 }
 
@@ -60,7 +62,7 @@ body[data-theme="dark"] [data-testid="adResult"] {
   border: var(--grey-700) 2px solid;
 }
 
-body[data-theme="dark"] [class*="SerpAdWebResult"] [class*="WebResult-module__iconBox"]{
+body[data-theme="dark"] [class*="SerpAdWebResult"] [class*="iconBox"]{
   display: none;
 }
 
@@ -72,12 +74,11 @@ body[data-theme="dark"] [data-testid="sectionWeb"], body[data-theme="dark"] [dat
   margin-bottom: 8px;
 }
 
-body[data-theme="dark"] [class*="Text-module__heading"]{
-  left: 25px;
+body[data-theme="dark"] [data-testid="webResult"] [class*="Text-module__serpLink"]{
   padding-right: 20px;
 }
 body[data-theme="dark"] .Stack-module__VerticalStack___2NDle{
-  grid-gap: 16px!important;
+  grid-gap: 8px!important;
 }
 
 body[data-theme="dark"] [class*="WebResult-module__title"] {
@@ -90,8 +91,13 @@ body[data-theme="dark"] [class*="Card-module"]:not([class*="ProductCard-module"]
   background-color: #1e2028 !important;
 }
 
+body[data-theme="dark"] [data-testid="mapsWikipediaLink"]{
+  background-color: transparent !important;
+}
 
-body[data-theme="dark"] [class*="Excerpt-module"] {
+
+body[data-theme="dark"] [class*="Excerpt-module"],
+body[data-theme="dark"] .external[class*="Text-module__caption"] {
   --gradient-background: #1e2028 !important;
 }
 
@@ -436,6 +442,10 @@ body[data-theme="light"] footer * {
 
 body[data-theme="dark"] footer * {
   background-color: #17191e !important;
+}
+
+body[data-theme="dark"] [class*="Sources-module"] footer * {
+  background-color: #1e2028 !important;
 }
 
 body[data-theme="dark"] [data-testid="IAFooter"] * {

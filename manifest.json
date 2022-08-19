@@ -1,6 +1,6 @@
 {
   "name": "Make Qwant Great Again",
-  "version": "1.2.4",
+  "version": "1.2.6",
   "description": "Better design and one click search through Google and other services for Qwant.",
   "content_scripts": [
     {
